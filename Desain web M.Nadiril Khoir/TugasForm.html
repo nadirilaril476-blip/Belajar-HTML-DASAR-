@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+
+<body>
+
+    <!-- Judul -->
+    <header>
+        <h1>FORMULIR PENDAFTARAN MAHASISWA BARU</h1>
+    </header>
+
+    <!-- Form -->
+    <form>
+
+        <!-- Data Pribadi -->
+        <fieldset>
+            <h1>Data Pribadi Calon Mahasiswa</h1>
+            <h6>Wajib diisi*</h6>
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama Lengkap" required>
+
+            <label for="tempat-lahir">Tempat Lahir</label>
+            <input type="text" id="tempat-lahir" placeholder="Masukkan Tempat Lahir" required>
+
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <input type="date" id="tanggal-lahir" required>
+
+            <label for="nik">Nomor Induk Kependudukan</label>
+            <input type="text" id="nik" placeholder="Masukkan NIK" required>
+
+            <label>Jenis Kelamin</label><br>
+            <input type="radio" id="laki" name="jenis-kelamin" required>
+            <label for="laki">Laki-laki</label>
+
+            <input type="radio" id="perempuan" name="jenis-kelamin">
+            <label for="perempuan">Perempuan</label>
+
+            <br><br>
+
+            <label for="agama">Agama</label>
+            <select id="agama" required>
+                <option value="" disabled selected hidden>Pilih Agama</option>
+                <option>Islam</option>
+                <option>Kristen</option>
+                <option>Katholik</option>
+                <option>Hindu</option>
+                <option>Budha</option>
+                <option>Konghucu</option>
+            </select>
+        </fieldset>
+
+        <!-- Informasi Kontak -->
+        <fieldset>
+            <h1>Informasi Kontak Calon Mahasiswa</h1>
+            <h6>Wajib diisi*</h6>
+
+            <label for="hp">Nomor Handphone Aktif</label>
+            <input type="text" id="hp" placeholder="Masukkan Nomor Handphone" required>
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" placeholder="Masukkan Alamat Email" required>
+
+            <label for="alamat">Alamat Mahasiswa</label>
+            <textarea id="alamat" placeholder="Masukkan Alamat Lengkap" required></textarea>
+        </fieldset>
+
+        <!-- Informasi Akademik -->
+        <fieldset>
+            <h1>Informasi Akademik Calon Mahasiswa</h1>
+            <h6>Wajib diisi*</h6>
+
+            <label for="sekolah">Asal Sekolah</label>
+            <input type="text" id="sekolah" placeholder="Masukkan Asal Sekolah" required>
+
+            <label for="tahun-lulus">Tahun Kelulusan</label>
+            <input type="text" id="tahun-lulus" placeholder="Masukkan Tahun Kelulusan" required>
+
+            <label for="prodi">Program Studi</label>
+            <select id="prodi" required>
+                <option value="" disabled selected hidden>Pilih Program Studi</option>
+                <option>S1 Teknik Informatika</option>
+                <option>S1 Sistem Informasi</option>
+                <option>D3 Manajemen Informatika</option>
+            </select>
+        </fieldset>
+
+        <!-- Dokumen -->
+        <fieldset>
+            <h1>Unggah Dokumen</h1>
+            <h6>Wajib diisi*</h6>
+
+            <label>Foto KTP</label>
+            <input type="file" required>
+
+            <label>Foto Kartu Keluarga</label>
+            <input type="file" required>
+
+            <label>Foto Akta Kelahiran</label>
+            <input type="file" required>
+
+            <label>Pas Foto 3x4</label>
+            <input type="file" required>
+
+            <label>Ijazah SMA/SMK/MA</label>
+            <input type="file" required>
+
+            <label>Surat Keterangan Lulus</label>
+            <input type="file" required>
+        </fieldset>
+
+        <!-- Tombol -->
+        <input type="submit" value="Kirim" alert("Formulir telah dikirim!")>
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

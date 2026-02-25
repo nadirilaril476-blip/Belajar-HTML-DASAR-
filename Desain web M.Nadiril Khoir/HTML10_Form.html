@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/formhtml_10.css">
+</head>
+
+<body>
+    <!-- Judul -->
+    <h2>Mie Ayam Fadqira</h2>
+    <!-- Formulir -->
+    <form>
+        <fieldset>
+            <p>
+                <label for="">Nama Pemesan</label>
+                <br>
+                <input type="text" placeholder="Masukkan Nama ">
+
+            </p>
+            <p>
+                <label for="">Jenis pesanan</label>
+                <br>
+                <select>
+                    <option disabled selected hidden>Makanan</option>
+                    <option>Mie Ayam</option>
+                    <option>Mie Pangsit</option>
+                    <option>Mie Sambal</option>
+                </select>
+                <select>
+                    <option disabled selected hidden>Minuman</option>
+                    <option>Teh Melati</option>
+                    <option>Teh Kurma</option>
+                    <option>Teh Kunyit</option>
+                    <option>Susu Coklat</option>
+                    <option>Susu Vanilla</option>
+                    <option>Matcha</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Tanggal Pesan</label>
+                <br>
+                <input type="date">
+            </p>
+            <p>
+                <label for="">Metode Pembayaran</label>
+                <br>
+                <input type="radio" name="payment" value="Tunai"> Tunai
+                <input type="radio" name="payment" value="Transfer"> Transfer
+                <input type="radio" name="payment" value="Qris"> Qris
+                <input type="radio" name="payment" value="COD"> COD
+            </p>
+        </fieldset>
+        <br>
+        <input type="button" value="Pesan" onclick="alert('Ok Pesanan Anda Sedang Diproses')">
+        <input type="reset">
+    </form>
+    <br>
+    <form>
+        <textarea placeholder="Tulis Penilaianmu tenntang layanan kami"></textarea>
+        <br>
+        <br>
+        <input type="button" value="Kirim" onclick="alert('Terima Kasih Atas Penilaianmu')">
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
